@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import axios from "axios";
-import contents from "../../data.json";
+import { contents } from "./data";
 
 const Home = () => {
   const [countries, setCountries] = useState([]);
