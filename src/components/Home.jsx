@@ -164,20 +164,20 @@ const Home = () => {
           <div className="fixed z-20 top-10">
             <button
               onClick={() => setSelectedCountry("")}
-              className="bg-white dark:bg-slate-700 rounded-md py-2 mb-5 lg:mb-24 px-5 shadow-lg"
+              className="bg-white dark:bg-slate-700 rounded-md py-2 mb-10 lg:mb-24 px-5 shadow-lg"
             >
               <span>←</span> Back
             </button>
-            <div className="flex items-center gap-24">
+            <div className="flex flex-col w-full mx-auto lg:flex-row items-start lg:items-center gap-10 lg:gap-20">
               <img
                 src={selectedCountry.flag}
-                className="lg:w-[520px] w-full h-80 object-cover border-[15px] border-slate-700 rounded-lg border-opacity-10"
+                className="lg:w-[520px] h-64 lg:h-80 object-cover border-[15px] border-slate-700 rounded-lg border-opacity-10"
               />
               <div>
                 <h1 className="font-bold text-xl md:text-3xl mb-5">
                   {selectedCountry.name}
                 </h1>
-                <div className="flex items-start gap-12 mb-5">
+                <div className="flex flex-col lg:flex-row items-start gap-12 mb-5">
                   <section className="space-y-2">
                     <p className="font-semibold">
                       Native Name:{" "}
