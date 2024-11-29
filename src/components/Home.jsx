@@ -161,7 +161,7 @@ const Home = () => {
 
       <section>
         {selectedCountry && (
-          <div className="fixed z-20 top-10">
+          <div className="fixed z-20 inset-0 p-10">
             <button
               onClick={() => setSelectedCountry("")}
               className="bg-white dark:bg-slate-700 rounded-md py-2 mb-10 lg:mb-24 px-5 shadow-lg"
@@ -243,7 +243,7 @@ const Home = () => {
                   <span className="font-semibold text-lg">
                     Border Countries:{" "}
                   </span>
-                  <span className="flex items-center gap-5">
+                  <span className="flex items-center flex-wrap gap-5">
                     {selectedCountry.borders ? (
                       selectedCountry.borders.map((border, index) => (
                         <p
